@@ -7,8 +7,22 @@ $this->add_control(
 				'type' => \Elementor\Controls_Manager::TEXT,
 				'default' => esc_html__( 'This text will be the default text', 'text_domain' ),
 				'placeholder' => esc_html__( 'This text will be the placeholder', 'text_domain' ),
-        'title' => esc_html__( 'This text will appear when hover ', 'text_domain' ),
+     				'title' => esc_html__( 'This text will appear when hover ', 'text_domain' ),
 			]
 		);
-    
+
+
+
+// Textarea Control
+
+$this->add_control(
+			'control_unique_name',
+			[
+				'label' => esc_html__( 'Control name on the panel', 'text_domain' ),
+				'type' => \Elementor\Controls_Manager::TEXTAREA,
+				'rows' => 10,
+				'default' => esc_html__( 'This text will be the default text', 'text_domain' ),
+				'placeholder' => esc_html__( 'This text will be the placeholder', 'text_domain' )
+			]
+		);
     
