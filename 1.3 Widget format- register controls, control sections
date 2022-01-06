@@ -53,3 +53,4 @@ protected function register_controls() {  //NOTICE- this function's closing brac
 
 		$this->end_controls_section();
 		
+}
