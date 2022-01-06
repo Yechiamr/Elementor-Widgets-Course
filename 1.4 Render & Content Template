@@ -1,0 +1,26 @@
+// Render- style controls that effect one content control
+
+protected function render() {
+                $settings = $this->get_settings_for_display();
+                ?>
+                    <div class="your-class"> 
+                        <?php echo $settings['unique___content_control_name']; ?>
+                    </div>
+                <?php
+        }
+
+
+
+
+// Content Template- style controls that effect one content control
+
+
+        protected function content_template() {
+                ?>
+                    <div class="your-class"> 
+                          <# 
+                             {{ settings.unique___content_control_name }} 
+                          #>
+                    </div>
+                <?php
+        }
