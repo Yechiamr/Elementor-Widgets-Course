@@ -1,3 +1,15 @@
+//Render two different text content controls
+
+protected function render() {
+                $settings = $this->get_settings_for_display();
+                ?>
+                    <div class="your-class"> 
+                        <?php echo $settings['unique__control_name1']; ?>
+                    </div>
+                <?php
+        }
+
+
 // Render- style controls that effect one content control
 
 protected function render() {
@@ -10,6 +22,18 @@ protected function render() {
         }
 
 
+
+// Content Template-  two different text content controls
+
+        protected function content_template() {
+                ?>
+                    <div class="your-class"> 
+                          <# 
+                             {{ settings.unique__control_name1 }} 
+                          #>
+                    </div>
+                <?php
+        }
 
 
 // Content Template- style controls that effect one content control
@@ -24,3 +48,5 @@ protected function render() {
                     </div>
                 <?php
         }
+
+
