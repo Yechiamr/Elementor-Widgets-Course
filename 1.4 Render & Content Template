@@ -29,7 +29,7 @@ protected function render() {
                 ?>
                     <div class="your-class"> 
                           <# 
-                             {{ settings.unique__control_name1 }} 
+                             {{ settings.unique_control_name1 }} 
                           #>
                     </div>
                 <?php
@@ -43,7 +43,7 @@ protected function render() {
                 ?>
                     <div class="your-class"> 
                           <# 
-                             {{ settings.unique___content_control_name }} 
+                             {{ settings.unique_content_control_name }} 
                           #>
                     </div>
                 <?php
