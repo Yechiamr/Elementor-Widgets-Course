@@ -1,15 +1,15 @@
 // Text Control
 
 $this->add_control(
-			'unique_control_name',
-			[
-				'label' => esc_html__( 'Control name on the panel', 'text_domain' ),
-				'type' => \Elementor\Controls_Manager::TEXT,
-				'default' => esc_html__( 'This text will be the default text', 'text_domain' ),
-				'placeholder' => esc_html__( 'This text will be the placeholder', 'text_domain' ),
-     				'title' => esc_html__( 'This text will appear when hover ', 'text_domain' ),
-			]
-		);
+	'unique_control_name',
+	[
+		'label' => esc_html__( 'Control name on the panel', 'text_domain' ),
+		'type' => \Elementor\Controls_Manager::TEXT,
+		'default' => esc_html__( 'This text will be the default text', 'text_domain' ),
+		'placeholder' => esc_html__( 'This text will be the placeholder', 'text_domain' ),
+     		'title' => esc_html__( 'This text will appear when hover ', 'text_domain' ),
+	]
+);
 
 
 
