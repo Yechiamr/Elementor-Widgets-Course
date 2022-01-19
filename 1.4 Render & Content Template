@@ -1,52 +1,65 @@
-//Render two different text content controls
+
+// Render- A text control without any style controls. The style will be rendered using an HTML tag.
 
 protected function render() {
-                $settings = $this->get_settings_for_display();
-                ?>
-                    <div class="your-class"> 
-                        <?php echo $settings['unique__control_name1']; ?>
-                    </div>
-                <?php
-        }
+    $settings = $this->get_settings_for_display();
+    echo '<h5>' . $settings['control_unique_name'] . '</h5>';
+}
 
 
-// Render- style controls that effect one content control
+//Render- Two different text content controls  without any style controls. The style will be rendered using an HTML tag.
 
 protected function render() {
-                $settings = $this->get_settings_for_display();
-                ?>
-                    <div class="your-class"> 
-                        <?php echo $settings['unique___content_control_name']; ?>
-                    </div>
-                <?php
-        }
+    $settings = $this->get_settings_for_display();
+    echo '<h5>' . $settings['control1_unique_name'] . '</h5>';
+    echo '<h2>' . $settings['control2_unique_name'] . '</h2>';
+}
+
+
+// Render- One content control that inherits style from multiple Style Controls
+
+protected function render() {
+    $settings = $this->get_settings_for_display();
+    ?>
+        <div class="your-class"> 
+            <?php echo $settings['unique_content_control_name']; ?>
+        </div>
+    <?php
+}
 
 
 
-// Content Template-  two different text content controls
+// Content Template- A text control without any style controls. The style will be rendered using an HTML tag.
 
-        protected function content_template() {
-                ?>
-                    <div class="your-class"> 
-                          <# 
-                             {{ settings.unique_control_name1 }} 
-                          #>
-                    </div>
-                <?php
-        }
+protected function content_template()
+    {
+      ?>
+        <h5>{{ settings.control_unique_name }}</h5>
+      <?php
+    }
 
 
-// Content Template- style controls that effect one content control
+// Content Template- Two different text content controls without any style controls. The style will be rendered using an HTML tag.
+
+protected function content_template() {
+    ?>
+        <h5>{{ settings.control1_unique_name }}</h5>
+        <h2>{{ settings.control2_unique_name }}</h2>
+     <?php
+}
 
 
-        protected function content_template() {
-                ?>
-                    <div class="your-class"> 
-                          <# 
-                             {{ settings.unique_content_control_name }} 
-                          #>
-                    </div>
-                <?php
-        }
+// Content Template- One content control that inherits style from multiple Style Controls
+
+
+protected function content_template() {
+    ?>
+        <div class="your-class"> 
+            <# 
+                {{ settings.unique_content_control_name }} 
+            #>
+        </div>
+    <?php
+}
 
 
