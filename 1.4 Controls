@@ -27,6 +27,34 @@ $this->add_control(
 );
     
     
+    
+// Image Control
+
+$this->add_control(
+	'image',
+	[
+		'label' => esc_html__('Choose Image', 'item-display'),
+		'type' => \Elementor\Controls_Manager::MEDIA,
+		'default' => [
+			'url' => \Elementor\Utils::get_placeholder_image_src(),
+		],
+	]
+);
+    
+    
+// Image Size Group Control
+
+$this->add_group_control(
+	\Elementor\Group_Control_Image_Size::get_type(),
+	[
+		'name' => 'thumbnail',
+		'exclude' => ['custom'],  
+		'include' => [],
+		'default' => 'large', 
+                
+	]
+);
+
 //  Color Control
 
 
