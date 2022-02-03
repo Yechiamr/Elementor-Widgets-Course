@@ -16,7 +16,7 @@ protected function render() {
 }
 
 
-// Render- One content control that inherits style from multiple Style Controls
+// Render- One content control that inherits style from multiple Style Controls grouped in a single class
 
 protected function render() {
     $settings = $this->get_settings_for_display();
@@ -49,7 +49,7 @@ protected function content_template() {
 }
 
 
-// Content Template- One content control that inherits style from multiple Style Controls
+// Content Template- One content control that inherits style from multiple Style Controls grouped in a single class
 
 
 protected function content_template() {
