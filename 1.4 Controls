@@ -33,7 +33,7 @@ $this->add_control(
 $this->add_control(
 	'image',
 	[
-		'label' => esc_html__('Choose Image', 'item-display'),
+		'label' => esc_html__('Choose Image', 'text-domain'),
 		'type' => \Elementor\Controls_Manager::MEDIA,
 		'default' => [
 			'url' => \Elementor\Utils::get_placeholder_image_src(),
